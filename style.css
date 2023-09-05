@@ -1,0 +1,25 @@
+:root {
+}
+
+body {
+  margin: 0px auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+main {
+  max-width: 50%;
+  margin: 0px auto;
+  margin-top: 16%;
+}
