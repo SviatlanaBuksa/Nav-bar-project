@@ -1,25 +1,65 @@
 :root {
+  --primary-color: #49a6e9;
+}
+html {
+  background-color: hsl(210, 36%, 96%);
 }
 
 body {
-  margin: 0px auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
 }
 
-ul {
-  margin: 0px;
-  padding: 0px;
+nav {
+  background-color: #fff;
+  height: 80px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid {
+  height: 100%;
+}
+.row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  text-align: left;
+}
+img:hover {
+  cursor: pointer;
 }
 
 li {
   list-style-type: none;
   display: inline;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+}
+a {
+  transition: 0.3s linear;
+}
+a: hover {
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: hsl(209, 34%, 30%);
+  margin: 5px;
+}
+.menu a:hover {
+  color: var(--primary-color);
 }
 
-main {
-  max-width: 50%;
-  margin: 0px auto;
-  margin-top: 16%;
+.socials {
+  text-align: right;
+}
+i {
+  color: var(--primary-color);
+  padding: 3px;
+}
+i:hover {
+  opacity: 0.7;
 }
