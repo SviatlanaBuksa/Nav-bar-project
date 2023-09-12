@@ -82,10 +82,21 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  /*  DEFAULT HIDDEN MENU */
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  /* TOGGLE CLASS */
+  .show-menu {
+    height: 11rem;
+  }
   nav {
     position: relative;
   }
-  #menu {
+  ul {
+    width: 100%;
     position: absolute;
     top: 80px;
     left: 0;
@@ -94,7 +105,7 @@ i {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
   }
-  #menu a {
+  .menu a {
     margin: 5px;
   }
   li {

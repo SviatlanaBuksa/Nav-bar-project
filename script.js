@@ -1,13 +1,6 @@
-/* "use strict";
+"use strict";
 
-let barsBtn = document.getElementById("bars-btn");
-let dropDownMenu = document.getElementById("menu");
+let toggleBtn = document.querySelector("#bars-btn");
+let menu = document.querySelector(".menu");
 
-function showMenu() {}
-
-barsBtn.addEventListener("click", function () {
-  dropDownMenu.classList.toggle("show");
-});
-
-console.log(barsBtn);
-console.log(dropDownMenu); */
+toggleBtn.addEventListener("click", () => menu.classList.toggle("show-menu"));
