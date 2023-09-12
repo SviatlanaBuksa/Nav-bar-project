@@ -17,6 +17,11 @@ nav {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .container-fluid {
   height: 100%;
 }
@@ -25,6 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   text-align: left;
 }
@@ -37,30 +43,32 @@ li {
   display: inline;
   text-transform: capitalize;
   transition: 0.3s linear;
-}
-a {
-  transition: 0.3s linear;
+  padding: 5px;
 }
 li:hover {
   cursor: pointer;
 }
-.menu a {
+a {
+  transition: 0.3s linear;
   text-decoration: none;
   color: hsl(209, 34%, 30%);
-  margin: 5px;
 }
-.menu li:hover a {
-  color: var(--primary-color);
+li:hover a {
+  color: #49a6e9;
 }
 
 .socials {
   text-align: right;
 }
+.socials li {
+  padding: 0;
+}
 i {
   color: var(--primary-color);
   padding: 3px;
+  transition: all 0.3s linear;
 }
-li:hover {
+.socials i:hover {
   opacity: 0.7;
 }
 
@@ -68,34 +76,30 @@ li:hover {
   text-align: right;
   font-size: 2rem;
 }
-.bars i {
-  transition: 0.3s linear;
-}
-i:hover {
-  rotate: 90deg;
-  cursor: pointer;
+.bars i:hover {
   color: hsl(205, 86%, 17%);
+  rotate: 90deg;
 }
 
 @media screen and (max-width: 768px) {
   nav {
     position: relative;
   }
-
-  .menu {
-    display: block !important;
-    background-color: #fff;
+  #menu {
     position: absolute;
     top: 80px;
     left: 0;
     text-align: left;
     padding: 0;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  #menu a {
+    margin: 5px;
   }
   li {
     display: block;
     padding: 10px 15px;
-    transition: 0.3s linear;
   }
   li:hover {
     background-color: hsl(205, 86%, 81%);
